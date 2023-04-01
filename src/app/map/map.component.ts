@@ -235,7 +235,7 @@ export class MapComponent implements OnInit {
         const latLng = L.latLng(position.latitude, position.longitude);
         if (this.map && this.marker) {
           this.marker.setLatLng(latLng);
-          this.map.setView(latLng, 16);
+          this.map.setView(latLng);
         }
       },
       (error) => {
